@@ -28,7 +28,7 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Home</a>
+					<a class="nav-link" href="index.html">Home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Projects</a>
@@ -37,7 +37,7 @@
 					<a class="nav-link" href="#">About Us</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Testimonials</a>
+					<a class="nav-link" href="testimonials.html">Testimonials</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Donate</a>
@@ -162,37 +162,37 @@
 	<div class="row padding">
 		<div class="col-md-4">
 			<div class="card">
+				<img class="card-img-top" src="img/daniel.JPG">
+				<div class="card-body">
+					<h4 class="card-title">Daniel Muhimuzi</h4>
+					<p class="card-text">
+						Daniel Muhimuzi is the founder of Apecos Rwanda. 
+					</p>
+					
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
 				<img class="card-img-top" src="img/francine.JPG">
 				<div class="card-body">
 					<h4 class="card-title">Francine</h4>
 					<p class="card-text">
 						Francine started working for Apecos in 2006. She manages all the Apecos activities.
 					</p>
-					<a href="#" class="btn btn-outline-secondary">See Profile</a>
+					
 				</div>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="card">
-				<img class="card-img-top" src="img/team2.png">
+				<img class="card-img-top" src="img/Veronique.JPG">
 				<div class="card-body">
-					<h4 class="card-title">Mary Joe</h4>
-					<p class="card-text">
-						Mary is a designer with almost 10 years of digital design experience.
-					</p>
-					<a href="#" class="btn btn-outline-secondary">See Profile</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="card">
-				<img class="card-img-top" src="img/team3.png">
-				<div class="card-body">
-					<h4 class="card-title">Phil Ho</h4>
+					<h4 class="card-title">Veronique</h4>
 					<p class="card-text">  
-						John is an internet enterpreneur eith almost 20 years of experience.
+						Veronique (right) has been our most prominent donor. She joined Apecos in 2010.
 					</p>
-					<a href="#" class="btn btn-outline-secondary">See Profile</a>
+					
 				</div>
 			</div>
 		</div>
@@ -200,8 +200,7 @@
 
 </div>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d898.3638316155372!2d30.087139155469835!3d-1.987546307652722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwNTknMTUuMyJTIDMwwrAwNScxNy4xIkU!5e1!3m2!1sen!2srw!4v1595848994329!5m2!1sen!2srw" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
+<br><br>
 
 
 <!--- Footer -->
@@ -215,8 +214,9 @@
 				<p>apecosrwa@gmail.com</p>
 				<p>KK 44st Murambi</p>
 				<p>Kigali, Rwanda</p>
+				
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 quicklinks">
 				<hr class="light">
 				<h5>Quick Links</h5>
 				<hr class="light">
@@ -226,17 +226,34 @@
 				<p><a href="">Donate</a></p>
 				<p> </p>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 contact">
 				<hr class="light">
-				<h5>Service Area</h5>
+				<h5>Contact Us</h5>
 				<hr class="light">
-				<p>City, State, 00000</p>
-				<p>City, State, 00000</p>
-				<p>City, State, 00000</p>
-				<p>City, State, 00000</p>
-				<p> </p>
+				<form name="contact" action="POST" data-netlify="true">
+					<p>
+					  <label>Your Name: <input type="text" name="name" placeholder="Your name..."/></label>   
+					</p>
+					<p>
+					  <label>Your Email: <input type="email" name="email" placeholder="Your email..."/></label>
+					</p>
+					<p>
+					  <label>Message: <textarea name="message" placeholder="Your message..."></textarea></label>
+					</p>
+					<div class="field">
+						<div data-netlify-recaptcha="true"></div>
+					</div>
+					<p>
+					  <button type="submit">Send</button>
+					</p>
+				  </form>
 			</div>
 			<div class="col-12">
+				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Location on Map</button>
+  				<div id="demo" class="collapse">
+					  <br>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d898.3638316155372!2d30.087139155469835!3d-1.987546307652722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwNTknMTUuMyJTIDMwwrAwNScxNy4xIkU!5e1!3m2!1sen!2srw!4v1595848994329!5m2!1sen!2srw" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
 				<hr class="light">
 				<h5>&copy; Apecos Rwanda 2021</h5>
 			</div>

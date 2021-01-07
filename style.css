@@ -184,6 +184,36 @@ hr.light-100 {
   margin-bottom: 1rem;
 }
 
+.quicklinks a {
+  text-decoration: none;
+}
+
+.quicklinks a:hover {
+  color: white;
+}
+
+.contact input {
+  border-radius: 5px;
+  background-color:lightgrey;
+  padding: 1rem;
+}
+
+.contact button {
+  margin-left: 1rem;
+  padding: .5rem 10rem;
+  border-radius: 10px;
+  border: 3px solid darkgreen;
+  color: green;
+  cursor: pointer;
+}
+
+.contact textarea {
+  padding: 1rem;
+  padding-bottom: 0;
+  width: 15rem;
+  margin-left: 1rem;
+}
+
 
 
 /*---Media Queries --*/
