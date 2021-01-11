@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,body {
   height: 100%;
   width: 100%;
@@ -9,8 +15,8 @@ html,body {
 
 .navbar {
   padding: .8rem;
+  box-shadow: 10px solid black;
 }
-
 
 .navbar-brand img{
   height: 3rem;
@@ -84,6 +90,7 @@ html,body {
   padding: 1rem;
   padding-left: 5rem;
   border-radius: 0%;
+  text-align: center;
  
 }
 
@@ -95,7 +102,34 @@ html,body {
 .jumbotron button:hover {
   background-color: rgb(219, 2, 2);
   border-color: red;
-  box-shadow: #3f3f3f;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  overflow: s;
+
+}
+.header img {
+  width: 100%;
+}
+
+.header-text {
+  position: absolute;
+  top: 60%;
+  color: white;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.527);
+  margin-left: 2rem;
+  padding: 2rem;
+  width: 40%;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header-text h1 {
+  font-weight: 700;
+  font-size: 50px;
 }
 
 
@@ -158,6 +192,7 @@ html,body {
 
 .centered p {
   font-size: 30px;
+  color: white;
 } 
 
 footer {
@@ -171,6 +206,7 @@ hr.light {
   width: 75%;
   margin-top: .8rem;
   margin-bottom: 1rem;
+  margin-left: 10%;
 }
 
 footer a {
@@ -199,12 +235,14 @@ hr.light-100 {
 }
 
 .contact button {
-  margin-left: 1rem;
-  padding: .5rem 10rem;
+  margin-left: 5rem;
+  padding: .5rem 5rem;
   border-radius: 10px;
-  border: 3px solid darkgreen;
-  color: green;
+  border: 3px solid #d5d5d5;
+  color: #d5d5d5;
+  background-color: #3f3f3f;
   cursor: pointer;
+
 }
 
 .contact textarea {
@@ -214,6 +252,35 @@ hr.light-100 {
   margin-left: 1rem;
 }
 
+.contact .field {
+  margin-left: 25%;
+  width: 5rem;
+}
+
+.bodyheader {
+  width: 100%;
+  
+}
+
+.bodyheader h3 {
+  text-align: left;
+  margin: 2rem;
+  margin-left: 5rem;
+}
+
+.bodyimage img{
+  width: 100%;
+  box-shadow: 2px 2px 5px 5px lightgrey;
+}
+
+.bodytext p{
+  padding-right: 5rem;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: large;
+  line-height: 2.3rem;
+  color: #3f3f3f;
+}
 
 
 /*---Media Queries --*/
@@ -244,7 +311,36 @@ hr.light-100 {
   }
 }
 @media (max-width: 576px) {
-  
+  .lead {
+    font-size: medium;
+    
+  }
+
+  .welcome {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: large;
+  }
+
+  .header-text {
+    position: absolute;
+    bottom: 0%; 
+    margin: 0;
+    padding: 1rem 2rem;
+    width: 100%;
+    font-size: small;
+  }
+
+  .header-text h1 {
+    font-size: x-large;
+  }
+
+  .jumbotron {
+    padding-left: 0;
+  }
+
 }
 
 
