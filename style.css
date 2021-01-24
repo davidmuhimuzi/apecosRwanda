@@ -13,6 +13,10 @@ html,body {
   color: #222; 
 }
 
+p {
+  font-size: large;
+}
+
 .navbar {
   padding: .8rem;
   box-shadow: 10px solid black;
@@ -132,6 +136,40 @@ html,body {
   font-size: 50px;
 }
 
+.header-text span a {
+  border: 2px solid white;
+  color: white;
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.programs {
+  margin: 2rem 10rem;
+  color: #505050;
+}
+
+.programs h1 {
+  text-align: center;
+  color: #3f3f3f;
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 2rem;
+}
+
+.programs .points {
+  padding: 0rem 4rem;
+}
+
+.programs .photo img {
+  width: 100%;
+  box-shadow: 2px 2px 3px 3px lightgrey;
+}
+
+.solo {
+  left: 20%;
+}
+
+
 
 .padding {
   padding-bottom: 2 rem;
@@ -163,6 +201,29 @@ html,body {
 
 .lead {
   color: grey;
+}
+.aboutpicture {
+  position: relative;
+  width: 100%;
+
+}
+.aboutpicture img {
+  width: 100%;
+}
+
+.aboutpicture-text {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.329);
+  color: white;
+  left: 0;
+  padding: 2rem;
+  width: 40%;
+  font-size: 20px;
+}
+
+.aboutpicture-text h1 {
+  font-weight: 700;
 }
 
 .container{
@@ -282,13 +343,50 @@ hr.light-100 {
   color: #3f3f3f;
 }
 
+.abouth1 {
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 2rem;
+}
+.abouth1 h1{
+  font-weight: 700;
+  text-align: center;
+  margin: 4rem;
+  margin-bottom: 0;
+  color: #3f3f3f;
+}
+
+.mission {
+  width: 100%;
+  text-align: center;
+  
+
+}
+
+.mission img {
+  width: 80%;
+  box-shadow: 2px 2px 3px 3px lightgrey;
+}
+
+.missiontext {
+  color:rgb(133, 132, 132);
+  font-size: large;
+  font-weight: 300;
+  margin: 4rem 0rem;
+  margin-bottom: 10rem;
+ 
+}
+
+
+.mission h2 {
+  font-weight: 700;
+  color:#3f3f3f;
+}
+
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
-  .social a {
-    font-size: 4em;
-    padding: 2rem;
-  }
+  
   }
 @media (max-width: 768px) {
   .carousel-caption {
@@ -316,31 +414,85 @@ hr.light-100 {
     
   }
 
+  .programs {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .solo {
+    left: 0;
+  }
+
   .welcome {
     width: 100%;
   }
 
   h1 {
-    font-size: large;
+    font-size: xx-large;
+  }
+
+  p {
+    font-size: medium;
   }
 
   .header-text {
     position: absolute;
     bottom: 0%; 
     margin: 0;
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
     width: 100%;
-    font-size: small;
   }
 
   .header-text h1 {
-    font-size: x-large;
+    font-size: medium;
+  }
+
+
+  .header-text p {
+    font-size: small;
   }
 
   .jumbotron {
     padding-left: 0;
   }
 
+  .bodytext p {
+    padding-right: 0;
+  }
+
+  .bodyheader h3 {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .abouth1 {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .aboutpicture-text {
+    width: 100%;
+    bottom: 0%;
+  }
+  .aboutpicture-text h1 {
+    font-size: medium;
+  }
+
+  .mission {
+    margin: 0;
+    padding: 0;
+  }
+
+
+}
+
+.maintain {
+  text-align: center;
+  margin: 15%;
+}
+.maintain h1 {
+  font-size: 300%;
 }
 
 
